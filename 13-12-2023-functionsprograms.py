@@ -14,7 +14,7 @@ print(l1(10))
 #4
 
 
-str1 = 'GeeksforGeeks'
+str1 = 'pythonisdynamiclanguage'
  
 upper = lambda string: string.upper()
 print(upper(str1))
