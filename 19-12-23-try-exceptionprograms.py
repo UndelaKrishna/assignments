@@ -44,14 +44,13 @@ except ZeroDivisionError as m:
 
 
 #5
-try:
-    print("hiikrishna")
-    print(10/0)
-    print("divison")
-except ZeroDivisionError as m:
-    print(10/0,"message",m)    
-    print("hii") 
-
+try :
+    a=10
+    print(a+b)
+except NameError :
+    print("NameError is occured")
+    print(10/2)
+    
 
 
 #case-2:
@@ -125,6 +124,16 @@ except SystemError as m:
     print(10/2,"message",m)
 print("hlooo")  
 
+#4
+try:
+    a=10
+    b="krishna"
+    print(a+b)
+except TypeError:
+    print("typeerror is occured")
+    print(a
+         
+
 #case-4:
 try:
     print(100-90)
@@ -183,6 +192,7 @@ try:
     a=int(input("enter the first number"))
     b=int(input("enter the second number"))
     print(a/b)
+    print(a+b)
 except ZeroDivisionError:
     print("cannot divided by zero") 
 
