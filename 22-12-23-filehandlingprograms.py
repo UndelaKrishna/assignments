@@ -1,7 +1,7 @@
 #read
-
 f=open("d1.txt","r")
 print(f.read())
+
 f=open("d1.txt","r")
 print(f.read(10))
 
@@ -20,13 +20,15 @@ print(f.read())
 #w+
 f=open("w1.txt","w+")
 print(f.write("python programming"))
+
 #r+w+
 f1=open("rw1.txt","r+")
 print(f1.write("helloworld"))
-#a+
 
+#a+
 f1=open("append1.txt","a+")
 print(f1.write("helloworld"))
+
 #x
 f2=open("myfile.txt","x")
 
