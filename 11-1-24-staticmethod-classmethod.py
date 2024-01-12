@@ -17,14 +17,12 @@ class  Employee:
         Employee.eexp=1
 
 print(Employee.__dict__)
-
 e=Employee()
 e.details()
 Employee.employeeDetails()
 Employee.display()
 Employee.c=100
 print(Employee.__dict__)
-
 
 e.employeeDetails()
 e.display()
@@ -36,32 +34,40 @@ print(e.__dict__)
 
 
 
-
 class Student:
     smarks=500
-    def __init__(self):
+    def __init__(self,snm,sper,sid,sphn):
+        self.snm=snm
+        self.sper=sper
+        self.sid=sid
+        self.sphn=sphn
+
         print(self.smarks)
         print(Student.smarks)
     def s(self):    
         print(self.smarks)
+        print(self.sid)
+        print(self.snm)
         print(Student.smarks)
     @classmethod
     def s1(cls):
         print(cls.smarks)  
         print(Student.smarks)
+ 
     @staticmethod
     def s2():
-        print(Student.smarks) 
-print(Student.smarks)
+      print(Student.smarks) 
+      print(Student.smarks)
 print(Student.__dict__)        
 
-s=Student()
+s=Student("krishna",70,12,9888,)
 print(s.smarks)
 s.s()
 s.s1()
 s.s2()
 print(s.smarks)
 print(s.__dict__)
+
 
 
 
